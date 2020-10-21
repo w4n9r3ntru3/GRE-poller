@@ -1,0 +1,218 @@
+mitigate:
+  M: to relieve and become less tense
+  E: I want to mitigate this pain.
+  P:
+    - ate
+
+
+anomalous:
+  M: not normal
+  E: I have an anomalous feeling of being powerless.
+  S:
+    - abberant
+    - deviant
+    - heteroclite
+    - preternatural
+    - irregular
+  P:
+    - a
+    - noma
+    - ous
+
+sanguine:
+  M: the state of being confident
+  E: I will me more sanguine about my future if I work harder now.
+  S:
+    - hopeful
+    - optimistic
+
+meticulous:
+  M: to be very careful
+  E: Some say that I am a meticulous person.
+  S: 
+    - careful
+  P:
+    - ous
+
+undermine:
+  M: to weaken, to make something weak
+  E: No one can undermine my success.
+  P:
+    - under
+    - mine
+
+innocuous:
+  M: not harmful
+  E: I am an innocuous being.
+  S: 
+    - harmless
+  O:
+    - harmful
+  P:
+    - innoc
+    - ous
+
+specious:
+  M: to look plausible but actually wrong
+  E: That's a specious speculation.
+  S:
+    - misleading
+    - deceptive
+    - "false"
+    - fallacious
+    - spurious
+  P:
+    - spec
+    - ous
+
+conventional:
+  M: not disruptive
+  E: There are so many conventional practices regarding ghosts in Taiwan.
+  O: 
+    - disrutpive
+  P:
+    - convention
+    - al
+
+rationale:
+  M: the reason for which to make things
+  E: The rationale for waking up is to eat.
+  S:
+    - reason
+  P:
+    - ration
+
+iconoclastic:
+  M: to break icons
+  E: President Mao was an iconoclastic leader.
+  P:
+    - icon
+    - clastic
+
+forestall:
+  M: to stop before things happen
+  E: I have to forestall and break the area. 
+  P:
+    - fore
+    - stall
+
+champion:
+  M: to figh for someone or something
+  E: The Liberty Army champions for world peace.
+  P:
+    - ion
+
+esoteric:
+  M: can be known only by insiders
+  E: He makes an esoteric comment on the website.
+  P:
+    - ic
+
+paucity:
+  M: lack of something
+  E: The paucity of evidence set me free.
+  S: 
+    - scarcity
+  O:
+    - profusion
+    - plethora
+  P:
+    - city
+
+paradox:
+  M: something that contradicts with itself
+  E: The example sentence of esoteric sounds like a paradox.
+  S: 
+    - contradiction
+  P:
+    - para
+    - dox
+
+confound:
+  M: to mess something up
+  E: It confounds me how the simple solution didn't occur to me.
+  S:
+    - perplex
+  P:
+    - con
+
+enigma:
+  M: things that are difficult to understand
+  E: The enigma of UFO has yet to be unravelled.
+  S:
+    - conunddrum
+
+opaque:
+  M: not transparent
+  E: The opaque liquid tastes disgusting.
+  O: transparent
+
+belie:
+  M: to mask some wrongdoing
+  E: Her emotional behaviour belies her gentleness.
+  O: 
+    - mask
+
+pragmatic:
+  M: is practical
+  E: Hopefully this pragmatic approach will help me find out where the error comes from.
+  S: 
+    - practical
+
+thwart:
+  M: to stop or intefere with someone else's action
+  E: That might thwart your opponent from taking the victory.
+
+superfluous:
+  M: excessive
+  E: Our presense is superfluous here.
+  P:
+    - super
+    - flu
+    - ous
+
+super:
+  M: over
+
+flu:
+  M: to flow
+
+repudiate:
+  M: to disagree
+  E: His appointment has be repudiated.
+  P:
+    - re
+
+capricious:
+  M: to move or change very quickly
+  E: Tornado's capricious nature makes it hard to predict when they'll come.
+  P:
+    - caprice
+    - ous
+
+eschew:
+  M: to not stand in the way of
+  E: Please eschew bad behaviours.
+
+sporadic:
+  M: scattered arond
+  E: Success is sporadic.
+  S:
+    - occational
+    - infrequent
+    - irregular
+  O:
+    - incessant
+    - constant
+  P:
+    - spore
+    - ic
+
+tacium:
+  M: silent
+  E: She remains tacium under interrogation.
+  S:
+    - locanic
+    - reticent
+  O:
+    - loquacious
