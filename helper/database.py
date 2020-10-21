@@ -42,7 +42,12 @@ class Word:
     def safe_dump(self):
         return yaml.safe_dump(self.asdict())
 
-    def fromdict(self, d: defaultdict):
+    def fromdict(self, d: dict):
+        assert isinstance(d, dict)
+
+        if not isinstance(d, defaultdict):
+            d = defaultdict(lambda: None, **d)
+
         self.meaning = d["M"]
         self.example = d["E"]
         self.similar = self.defaultset(d["S"])
@@ -53,15 +58,15 @@ class Word:
 
     @classmethod
     def safe_load(cls, string):
-        return cls().fromdict(defaultdict(lambda x: None, **yaml.safe_load(string)))
+        return cls().fromdict(yaml.safe_load(string))
 
     @property
     def isroot(self):
         return len(self.children) != 0
 
-    def asdict(self) -> dict:
+    def asdict(self) -> defaultdict:
         return defaultdict(
-            lambda x: None,
+            lambda: None,
             M=self.meaning,
             E=self.example,
             S=self.similar,
@@ -82,28 +87,30 @@ class DataBase:
         self.enc = enc
         try:
             with open(self.file, mode="r+", encoding=self.enc) as f:
-                # data: Dict[str, str]
-                data: dict = yaml.safe_load(f)
+                data = yaml.safe_load(f)
         except IOError:
             data = {}
-        self.data = {k: Word.safe_load(v) for (k, v) in data.items()}
+        data = {k: Word.safe_load(v) for (k, v) in data.items()}
+        self.data = defaultdict(Word, **data)
 
     @staticmethod
     def concat_iterable(func, words):
-        return set().union(words, *(func(w) for w in words))
+        return words.union(func(w) for w in words)
 
     def ancestors(self, word: str) -> set:
         "Get the ancestors of a word"
-        assert self.has(word)
-        parents = self.data[word].parents
+        if word not in self:
+            self[word] = Word()
+
+        parents = self[word].parents
         ans = self.concat_iterable(self.ancestors, parents)
         parents.update(ans)
         return parents
 
     def decendants(self, word: str) -> set:
         "Get the decendants of a word"
-        assert self.has(word)
-        children = self.data[word].children
+        assert word in self
+        children = self[word].children
         ans = self.concat_iterable(self.decendants, children)
         children.update(ans)
         return children
@@ -111,61 +118,53 @@ class DataBase:
     def add(self, word: str, info: Word):
         "Add a word to graph"
 
-        self.data[word] = info
-
-        assert self.check(word)
-
+        self[word] = info
         ancestors = self.ancestors(word)
         for wordroot in ancestors:
-            self.data.get(wordroot, Word()).children.add(word)
+            self.data[wordroot].children.add(word)
 
         decendants = self.decendants(word)
         for longword in decendants:
-            self.data.get(longword, Word()).parents.add(word)
+            self.data[longword].parents.add(word)
 
-        prev = self.data.get(word, Word())
+        prev = self.data[word]
         info.parents.update(prev.parents)
         info.children.update(prev.children)
-        self.data[word] = info
+        self[word] = info
+
+        assert self.check(word)
 
     def delete(self, word: str = "", also_root=False):
         if word == "":
-            self.data = {}
+            self.data = defaultdict(Word)
             return
 
-        assert self.has(word)
+        assert word in self
 
-        w: Word = self.data[word]
-        del self.data[word]
+        w: Word = self[word]
+        del self[word]
 
         for wordroot in w.parents:
-            assert self.has(wordroot)
+            assert wordroot in self
 
             r: Word = self.data[wordroot]
             r.children.remove(word)
             # also delete roots
             if also_root and not r.isroot:
                 self.delete(wordroot)
-                assert not self.has(wordroot)
+                assert wordroot not in self
 
         for longword in w.children:
-            assert self.has(longword)
+            assert longword in self
 
             l: Word = self.data[longword]
             l.parents.remove(word)
 
-    def has(self, word: str):
-        return word in self.data.keys()
-
-    def get(self, word: str):
-        assert self.has(word)
-        return self[word]
-
     def check(self, word: str):
         return (
-            self.has(word)
-            and all(self.check(p) for p in self.data[word].parents)
-            and all(self.check(d) for d in self.data[word].children)
+            word in self
+            and all(self.check(p) for p in self[word].parents)
+            and all(self.check(d) for d in self[word].children)
         )
 
     def find(self, word: str = ""):
@@ -173,6 +172,22 @@ class DataBase:
 
     def __getitem__(self, key: str):
         return self.data[key]
+
+    def __setitem__(self, key: str, value):
+        self.delete(key)
+        self.add(key, value)
+
+    def __delitem__(self, key):
+        self.delete(key)
+
+    def __contains__(self, value) -> bool:
+        return value in self.data
+
+    def keys(self):
+        return self.data.keys()
+
+    def values(self):
+        return self.data.values()
 
     def __del__(self):
         data = {k: v.safe_dump() for (k, v) in self.data.items()}

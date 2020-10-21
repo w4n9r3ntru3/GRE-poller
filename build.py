@@ -1,6 +1,8 @@
+from collections import defaultdict
+
 import yaml
 
-from helper import Add, All, Del, Get, Word
+from helper import Add, Del, Find, Get, Word
 
 if __name__ == "__main__":
     with open("vocabs.yaml", "r") as f:
@@ -8,8 +10,8 @@ if __name__ == "__main__":
 
     data: dict = yaml.safe_load(content)
 
-    for (key, value) in data:
+    for (key, value) in data.items():
         assert isinstance(key, str)
-        assert isinstance(key, dict)
+        assert isinstance(value, dict)
 
         Add(key, Word().fromdict(value))
