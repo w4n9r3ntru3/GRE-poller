@@ -4,7 +4,6 @@ mitigate:
   P:
     - ate
 
-
 anomalous:
   M: not normal
   E: I have an anomalous feeling of being powerless.
@@ -29,7 +28,7 @@ sanguine:
 meticulous:
   M: to be very careful
   E: Some say that I am a meticulous person.
-  S: 
+  S:
     - careful
   P:
     - ous
@@ -44,7 +43,7 @@ undermine:
 innocuous:
   M: not harmful
   E: I am an innocuous being.
-  S: 
+  S:
     - harmless
   O:
     - harmful
@@ -68,7 +67,7 @@ specious:
 conventional:
   M: not disruptive
   E: There are so many conventional practices regarding ghosts in Taiwan.
-  O: 
+  O:
     - disrutpive
   P:
     - convention
@@ -91,7 +90,7 @@ iconoclastic:
 
 forestall:
   M: to stop before things happen
-  E: I have to forestall and break the area. 
+  E: I have to forestall and break the area.
   P:
     - fore
     - stall
@@ -111,7 +110,7 @@ esoteric:
 paucity:
   M: lack of something
   E: The paucity of evidence set me free.
-  S: 
+  S:
     - scarcity
   O:
     - profusion
@@ -122,7 +121,7 @@ paucity:
 paradox:
   M: something that contradicts with itself
   E: The example sentence of esoteric sounds like a paradox.
-  S: 
+  S:
     - contradiction
   P:
     - para
@@ -150,13 +149,13 @@ opaque:
 belie:
   M: to mask some wrongdoing
   E: Her emotional behaviour belies her gentleness.
-  O: 
+  O:
     - mask
 
 pragmatic:
   M: is practical
   E: Hopefully this pragmatic approach will help me find out where the error comes from.
-  S: 
+  S:
     - practical
 
 thwart:
