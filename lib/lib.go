@@ -30,7 +30,7 @@ func N() None { return None{} }
 
 // SetToList converts a set to a list
 func SetToList(set map[string]None) (list []interface{}) {
-	list = make([]interface{}, len(set))
+	list = make([]interface{}, 0)
 	for key := range set {
 		list = append(list, key)
 	}
@@ -48,20 +48,20 @@ func ListToSet(list []interface{}) (set map[string]None) {
 
 // Word represents a word
 type Word struct {
-	// Meaning of a word
-	Meaning string
+	// Mng of a word
+	Mng string
 
-	// Example usage
-	Example string
+	// Exmp usage
+	Exmp string
 
-	// Which Kind
-	Kind string
+	// Which Knd
+	Knd string
 
-	// Similar words
-	Similar map[string]None
+	// Smlr words
+	Smlr map[string]None
 
-	// Opposite words
-	Opposite map[string]None
+	// Opst words
+	Opst map[string]None
 
 	// WordRoot of the current word
 	WordRoot map[string]None
@@ -74,38 +74,40 @@ type Word struct {
 func NewWordFrom(m map[string]interface{}) *Word {
 	word := Word{}
 
-	if meaning, ok := m["M"]; ok {
-		word.Meaning = meaning.(string)
+	if meaning, ok := m["Mng"]; ok {
+		word.Mng = meaning.(string)
 	}
-	if example, ok := m["E"]; ok {
-		word.Example = example.(string)
+
+	if example, ok := m["Exmp"]; ok {
+		word.Exmp = example.(string)
 	}
-	if kind, ok := m["K"]; ok {
+
+	if kind, ok := m["Knd"]; ok {
 		kind := kind.(string)
 		switch kind {
 		case Noun, Verb, Adj, Adv, Aux, Conj, Pro:
 		default:
 			log.Fatalln(kind, "is not a kind.")
 		}
-		word.Kind = kind
+		word.Knd = kind
 	}
 
-	if similar, ok := m["S"]; ok {
+	if similar, ok := m["Smlr"]; ok {
 		list := similar.([]interface{})
-		word.Similar = ListToSet(list)
+		word.Smlr = ListToSet(list)
 	}
 
-	if opposite, ok := m["O"]; ok {
+	if opposite, ok := m["Opst"]; ok {
 		list := opposite.([]interface{})
-		word.Opposite = ListToSet(list)
+		word.Opst = ListToSet(list)
 	}
 
-	if root, ok := m["P"]; ok {
+	if root, ok := m["Prnt"]; ok {
 		list := root.([]interface{})
 		word.WordRoot = ListToSet(list)
 	}
 
-	if derived, ok := m["C"]; ok {
+	if derived, ok := m["Cdrn"]; ok {
 		list := derived.([]interface{})
 		word.Derived = ListToSet(list)
 	}
@@ -116,13 +118,13 @@ func NewWordFrom(m map[string]interface{}) *Word {
 // AsMap converts a word into a for serialization
 func (word *Word) AsMap() map[string]interface{} {
 	return map[string]interface{}{
-		"M": word.Meaning,
-		"E": word.Example,
-		"K": word.Kind,
-		"S": SetToList(word.Similar),
-		"O": SetToList(word.Opposite),
-		"P": SetToList(word.WordRoot),
-		"C": SetToList(word.Derived),
+		"Mng":  word.Mng,
+		"Exmp":  word.Exmp,
+		"Knd":     word.Knd,
+		"Smlr":  SetToList(word.Smlr),
+		"Opst": SetToList(word.Opst),
+		"Prnt":   SetToList(word.WordRoot),
+		"Cdrn": SetToList(word.Derived),
 	}
 
 }

@@ -1,259 +1,286 @@
 mitigate:
-  M: to relieve and become less tense
-  E: I want to mitigate this pain.
-  K: verb
-  P:
+  Mng: to relieve and become less tense
+  Exmp: I want to mitigate this pain.
+  Knd: verb
+  Prnt:
     - ate
 
 anomalous:
-  M: not normal
-  E: I have an anomalous feeling of being powerless.
-  K: adj
-  S:
+  Mng: not normal
+  Exmp: I have an anomalous feeling of being powerless.
+  Knd: adj
+  Smlr:
     - abberant
     - deviant
     - heteroclite
     - preternatural
     - irregular
-  P:
+  Prnt:
     - a
     - noma
     - ous
 
 sanguine:
-  M: the state of being confident
-  E: I will me more sanguine about my future if I work harder now.
-  K: adj
-  S:
+  Mng: the state of being confident
+  Exmp: I will me more sanguine about my future if I work harder now.
+  Knd: adj
+  Smlr:
     - hopeful
     - optimistic
 
 meticulous:
-  M: to be very careful
-  E: Some say that I am a meticulous person.
-  K: adj
-  S:
+  Mng: to be very careful
+  Exmp: Some say that I am a meticulous person.
+  Knd: adj
+  Smlr:
     - careful
-  P:
+  Prnt:
     - ous
 
 undermine:
-  M: to weaken, to make something weak
-  E: No one can undermine my success.
-  K: verb
-  P:
+  Mng: to weaken, to make something weak
+  Exmp: No one can undermine my success.
+  Knd: verb
+  Prnt:
     - under
     - mine
 
 innocuous:
-  M: not harmful
-  E: I am an innocuous being.
-  K: adj
-  S:
+  Mng: not harmful
+  Exmp: I am an innocuous being.
+  Knd: adj
+  Smlr:
     - harmless
-  O:
+  Opst:
     - harmful
-  P:
+  Prnt:
     - innoc
     - ous
 
 specious:
-  M: to look plausible but actually wrong
-  E: That's a specious observation.
-  K: adj
-  S:
+  Mng: to look plausible but actually wrong
+  Exmp: That's a specious observation.
+  Knd: adj
+  Smlr:
     - misleading
     - deceptive
     - "false"
     - fallacious
     - spurious
-  P:
+  Prnt:
     - spec
     - ous
 
 conventional:
-  M: not disruptive
-  E: There are so many conventional practices regarding ghosts in Taiwan.
-  K: adj
-  O:
+  Mng: not disruptive
+  Exmp: There are so many conventional practices regarding ghosts in Taiwan.
+  Knd: adj
+  Opst:
     - disrutpive
-  P:
+  Prnt:
     - convention
     - al
 
 rationale:
-  M: the reason for which to make things
-  E: The rationale for waking up is to eat.
-  K: noun
-  S:
+  Mng: the reason for which to make things
+  Exmp: The rationale for waking up is to eat.
+  Knd: noun
+  Smlr:
     - reason
-  P:
+  Prnt:
     - ration
 
 iconoclastic:
-  M: to break icons
-  E: President Mao was an iconoclastic leader.
-  K: adj
-  P:
+  Mng: to break icons
+  Exmp: President Mao was an iconoclastic leader.
+  Knd: adj
+  Prnt:
     - icon
     - clastic
 
 forestall:
-  M: to stop before things happen
-  E: I have to forestall and break the area.
-  K: verb
-  P:
+  Mng: to stop before things happen
+  Exmp: I have to forestall and break the area.
+  Knd: verb
+  Prnt:
     - fore
     - stall
 
 champion:
-  M: to figh for someone or something
-  E: The Liberty Army champions for world peace.
-  K: verb
-  P:
+  Mng: to figh for someone or something
+  Exmp: The Liberty Army champions for world peace.
+  Knd: verb
+  Prnt:
     - ion
 
 esoteric:
-  M: can be known only by insiders
-  E: He makes an esoteric comment on the website.
-  K: adj
-  P:
+  Mng: can be known only by insiders
+  Exmp: He makes an esoteric comment on the website.
+  Knd: adj
+  Prnt:
     - ic
 
 paucity:
-  M: lack of something
-  E: The paucity of evidence set me free.
-  K: noun
-  S:
+  Mng: lack of something
+  Exmp: The paucity of evidence set me free.
+  Knd: noun
+  Smlr:
     - scarcity
-  O:
+  Opst:
     - profusion
     - plethora
-  P:
+  Prnt:
     - city
 
 paradox:
-  M: something that contradicts with itself
-  E: The example sentence of esoteric sounds like a paradox.
-  K: noun
-  S:
+  Mng: something that contradicts with itself
+  Exmp: The example sentence of esoteric sounds like a paradox.
+  Knd: noun
+  Smlr:
     - contradiction
-  P:
+  Prnt:
     - para
     - dox
 
 confound:
-  M: to mess something up
-  E: It confounds me how the simple solution didn't occur to me.
-  K: verb
-  S:
+  Mng: to mess something up
+  Exmp: It confounds me how the simple solution didn't occur to me.
+  Knd: verb
+  Smlr:
     - perplex
-  P:
+  Prnt:
     - con
 
 enigma:
-  M: things that are difficult to understand
-  E: The enigma of UFO has yet to be unravelled.
-  K: noun
-  S:
+  Mng: things that are difficult to understand
+  Exmp: The enigma of UFO has yet to be unravelled.
+  Knd: noun
+  Smlr:
     - conunddrum
 
 opaque:
-  M: not transparent
-  E: The opaque liquid tastes disgusting.
-  K: adj
-  O: 
+  Mng: not transparent
+  Exmp: The opaque liquid tastes disgusting.
+  Knd: adj
+  Opst: 
     - transparent
 
 belie:
-  M: to mask some wrongdoing
-  E: Her emotional behaviour belies her gentleness.
-  K: verb
-  O:
+  Mng: to mask some wrongdoing
+  Exmp: Her emotional behaviour belies her gentleness.
+  Knd: verb
+  Opst:
     - mask
 
 pragmatic:
-  M: is practical
-  E: Hopefully this pragmatic approach will help me find out where the error comes from.
-  K: adj
-  S:
+  Mng: is practical
+  Exmp: Hopefully this pragmatic approach will help me find out where the error comes from.
+  Knd: adj
+  Smlr:
     - practical
 
 thwart:
-  M: to stop or intefere with someone else's action
-  E: That might thwart your opponent from taking the victory.
-  K: verb
+  Mng: to stop or intefere with someone else's action
+  Exmp: That might thwart your opponent from taking the victory.
+  Knd: verb
 
 superfluous:
-  M: excessive
-  E: Our presense is superfluous here.
-  K: adj
-  P:
+  Mng: excessive
+  Exmp: Our presense is superfluous here.
+  Knd: adj
+  Prnt:
     - super
     - flu
     - ous
 
 super:
-  M: over
+  Mng: over
 
 flu:
-  M: to flow
+  Mng: to flow
 
 repudiate:
-  M: to disagree
-  E: His appointment has be repudiated.
-  P:
+  Mng: to disagree
+  Exmp: His appointment has be repudiated.
+  Knd: verb
+  Prnt:
     - re
 
 capricious:
-  M: to move or change very quickly
-  E: Tornado's capricious nature makes it hard to predict when they'll come.
-  P:
+  Mng: to move or change very quickly
+  Exmp: Tornado's capricious nature makes it hard to predict when they'll come.
+  Knd: adj
+  Prnt:
     - caprice
     - ous
 
 eschew:
-  M: to not stand in the way of
-  E: Please eschew bad behaviours.
+  Mng: to not stand in the way of
+  Exmp: Please eschew bad behaviours.
+  Knd: verb
 
 sporadic:
-  M: scattered arond
-  E: Success is sporadic.
-  S:
+  Mng: scattered arond
+  Exmp: Success is sporadic.
+  Knd: adj
+  Smlr:
     - occational
     - infrequent
     - irregular
-  O:
+  Opst:
     - incessant
     - constant
-  P:
+  Prnt:
     - spore
     - ic
 
 tacium:
-  M: silent
-  E: She remains tacium under interrogation.
-  S:
+  Mng: silent
+  Exmp: She remains tacium under interrogation.
+  Knd: adj
+  Smlr:
     - locanic
     - reticent
-  O:
+  Opst:
     - loquacious
 
 exacerbate:
-  M: to make bad things worse
-  E: The illness has exacerbated his health situation.
-  S:
+  Mng: to make bad things worse
+  Exmp: The illness has exacerbated his health situation.
+  Knd: verb
+  Smlr:
     - aggravate
-  P:
+  Prnt:
     - ate
 
 discern:
-  M: to discrimate between different objects
-  E: The figure is discerned before getting close.
-  P: 
+  Mng: to discrimate between different objects
+  Exmp: The figure is discerned before getting close.
+  Knd: verb
+  Prnt: 
     - dis
 
 preclude:
-  M: to avoid something abstract
-  E: Bikers should be aware of cars to preclude indicents.
-  K: adj
+  Mng: to avoid something abstract
+  Exmp: Bikers should be aware of cars to preclude indicents.
+  Knd: adj
+
+cynical:
+  Mng: distrustful of human nature
+  Exmp: It's cynical to believe that it was all political.
+  Knd: adj
+
+perfunctory:
+  Mng: not taking a lot of care and effort
+  Exmp: I made a perfunctory glance at the valley.
+  Knd: adj
+  Prnt:
+    - per
+    - funct
+    - ory
+
+lucid:
+  Mng: clear
+  Exmp: I had a lucid dream.
+  Knd: adj
+  

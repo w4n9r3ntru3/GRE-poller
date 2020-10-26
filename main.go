@@ -48,7 +48,7 @@ func main() {
 		converted[key] = val.AsMap()
 	}
 
-	data, err = json.Marshal(converted)
+	data, err = json.MarshalIndent(converted, "", "\t")
 	panicIfNil(err)
 	err = ioutil.WriteFile(outFileName, data, 0664)
 	panicIfNil(err)
