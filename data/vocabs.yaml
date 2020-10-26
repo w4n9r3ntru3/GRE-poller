@@ -1,12 +1,14 @@
 mitigate:
   M: to relieve and become less tense
   E: I want to mitigate this pain.
+  K: verb
   P:
     - ate
 
 anomalous:
   M: not normal
   E: I have an anomalous feeling of being powerless.
+  K: adj
   S:
     - abberant
     - deviant
@@ -21,6 +23,7 @@ anomalous:
 sanguine:
   M: the state of being confident
   E: I will me more sanguine about my future if I work harder now.
+  K: adj
   S:
     - hopeful
     - optimistic
@@ -28,6 +31,7 @@ sanguine:
 meticulous:
   M: to be very careful
   E: Some say that I am a meticulous person.
+  K: adj
   S:
     - careful
   P:
@@ -36,6 +40,7 @@ meticulous:
 undermine:
   M: to weaken, to make something weak
   E: No one can undermine my success.
+  K: verb
   P:
     - under
     - mine
@@ -43,6 +48,7 @@ undermine:
 innocuous:
   M: not harmful
   E: I am an innocuous being.
+  K: adj
   S:
     - harmless
   O:
@@ -53,7 +59,8 @@ innocuous:
 
 specious:
   M: to look plausible but actually wrong
-  E: That's a specious speculation.
+  E: That's a specious observation.
+  K: adj
   S:
     - misleading
     - deceptive
@@ -67,6 +74,7 @@ specious:
 conventional:
   M: not disruptive
   E: There are so many conventional practices regarding ghosts in Taiwan.
+  K: adj
   O:
     - disrutpive
   P:
@@ -76,6 +84,7 @@ conventional:
 rationale:
   M: the reason for which to make things
   E: The rationale for waking up is to eat.
+  K: noun
   S:
     - reason
   P:
@@ -84,6 +93,7 @@ rationale:
 iconoclastic:
   M: to break icons
   E: President Mao was an iconoclastic leader.
+  K: adj
   P:
     - icon
     - clastic
@@ -91,6 +101,7 @@ iconoclastic:
 forestall:
   M: to stop before things happen
   E: I have to forestall and break the area.
+  K: verb
   P:
     - fore
     - stall
@@ -98,18 +109,21 @@ forestall:
 champion:
   M: to figh for someone or something
   E: The Liberty Army champions for world peace.
+  K: verb
   P:
     - ion
 
 esoteric:
   M: can be known only by insiders
   E: He makes an esoteric comment on the website.
+  K: adj
   P:
     - ic
 
 paucity:
   M: lack of something
   E: The paucity of evidence set me free.
+  K: noun
   S:
     - scarcity
   O:
@@ -121,6 +135,7 @@ paucity:
 paradox:
   M: something that contradicts with itself
   E: The example sentence of esoteric sounds like a paradox.
+  K: noun
   S:
     - contradiction
   P:
@@ -130,6 +145,7 @@ paradox:
 confound:
   M: to mess something up
   E: It confounds me how the simple solution didn't occur to me.
+  K: verb
   S:
     - perplex
   P:
@@ -138,33 +154,40 @@ confound:
 enigma:
   M: things that are difficult to understand
   E: The enigma of UFO has yet to be unravelled.
+  K: noun
   S:
     - conunddrum
 
 opaque:
   M: not transparent
   E: The opaque liquid tastes disgusting.
-  O: transparent
+  K: adj
+  O: 
+    - transparent
 
 belie:
   M: to mask some wrongdoing
   E: Her emotional behaviour belies her gentleness.
+  K: verb
   O:
     - mask
 
 pragmatic:
   M: is practical
   E: Hopefully this pragmatic approach will help me find out where the error comes from.
+  K: adj
   S:
     - practical
 
 thwart:
   M: to stop or intefere with someone else's action
   E: That might thwart your opponent from taking the victory.
+  K: verb
 
 superfluous:
   M: excessive
   E: Our presense is superfluous here.
+  K: adj
   P:
     - super
     - flu
@@ -215,3 +238,22 @@ tacium:
     - reticent
   O:
     - loquacious
+
+exacerbate:
+  M: to make bad things worse
+  E: The illness has exacerbated his health situation.
+  S:
+    - aggravate
+  P:
+    - ate
+
+discern:
+  M: to discrimate between different objects
+  E: The figure is discerned before getting close.
+  P: 
+    - dis
+
+preclude:
+  M: to avoid something abstract
+  E: Bikers should be aware of cars to preclude indicents.
+  K: adj
