@@ -63,11 +63,11 @@ type Word struct {
 	// Opst words
 	Opst map[string]None
 
-	// WordRoot of the current word
-	WordRoot map[string]None
+	// Prnt of the current word
+	Prnt map[string]None
 
-	// Derived word of the current word
-	Derived map[string]None
+	// Cdrn word of the current word
+	Cdrn map[string]None
 }
 
 // NewWordFrom creates a new word from a given map
@@ -104,12 +104,12 @@ func NewWordFrom(m map[string]interface{}) *Word {
 
 	if root, ok := m["Prnt"]; ok {
 		list := root.([]interface{})
-		word.WordRoot = ListToSet(list)
+		word.Prnt = ListToSet(list)
 	}
 
 	if derived, ok := m["Cdrn"]; ok {
 		list := derived.([]interface{})
-		word.Derived = ListToSet(list)
+		word.Cdrn = ListToSet(list)
 	}
 
 	return &word
@@ -119,12 +119,12 @@ func NewWordFrom(m map[string]interface{}) *Word {
 func (word *Word) AsMap() map[string]interface{} {
 	return map[string]interface{}{
 		"Mng":  word.Mng,
-		"Exmp":  word.Exmp,
-		"Knd":     word.Knd,
-		"Smlr":  SetToList(word.Smlr),
+		"Exmp": word.Exmp,
+		"Knd":  word.Knd,
+		"Smlr": SetToList(word.Smlr),
 		"Opst": SetToList(word.Opst),
-		"Prnt":   SetToList(word.WordRoot),
-		"Cdrn": SetToList(word.Derived),
+		"Prnt": SetToList(word.Prnt),
+		"Cdrn": SetToList(word.Cdrn),
 	}
 
 }
