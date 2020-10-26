@@ -132,6 +132,12 @@ paucity:
   Prnt:
     - city
 
+para:
+  Mng: opposite
+
+dox:
+  Mng: of the law
+
 paradox:
   Mng: something that contradicts with itself
   Exmp: The example sentence of esoteric sounds like a paradox.
@@ -205,6 +211,7 @@ repudiate:
   Knd: verb
   Prnt:
     - re
+    - ate
 
 capricious:
   Mng: to move or change very quickly
@@ -270,6 +277,12 @@ cynical:
   Exmp: It's cynical to believe that it was all political.
   Knd: adj
 
+per:
+  Mng: staying away, completely
+
+funct:
+  Mng: function
+
 perfunctory:
   Mng: not taking a lot of care and effort
   Exmp: I made a perfunctory glance at the valley.
@@ -283,4 +296,236 @@ lucid:
   Mng: clear
   Exmp: I had a lucid dream.
   Knd: adj
+  Smlr:
+    - apparent
+    - clear
+    - crystal clear
+    - decided
+    - distinct
+    - evident
+    - luculent
+    - luminous
+    - manifest
+    - pellucid
+    - plain
+    - straightforward
+    - transparent
+  Prnt:
+    - lu
+
+apathetic:
+  Mng: does not care
+  Exmp: His apathy towards political issues is mind-boggling.
+  Knd: adj
+  Prnt:
+    - a
+    - path
+    - tic
+
+contend:
+  Mng: to fight for something
+  Knd: verb
+
+contentious:
+  Mng: worthy of contention
+  Exmp: That issue remains contentious.
+  Knd: adj
+  Prnt:
+    - contend
+    - ous
+
+mundane:
+  Mng: boring and normal
+  Exmp: Those chores are mundane
+  Knd: adj
+  Smlr:
+    - prosaic
+
+panacea:
+  Mng: good medicine
+  Exmp: That is panacea for my headache.
+  Knd: noun
+
+polemical:
+  Mng: controversial
+  Exmp: Political issues are often polemeical
+  Smlr:
+    - polemic
+    - controversial
+  Opst:
+    - conciliatory
+
+qualify:
+  Mng: to limit
+  Exmp: I want to qualify my statement of devotion.
+  Knd: verb
+
+reticent:
+  Mng: silent
+  Exmp: She remains reticent under interrogation.
+  Knd: adj 
+  Smlr:
+    - tacium
+
+inimical:
+  Mng: unfriendly and hostile
+  Exmp: Here attitude stayed inimical after we meet.
+  Knd: adj
+
+arbitrary:
+  Mng: to dictate the answer
+  Exmp: It's an arbitrary decision.
+  Knd: adj
+
+augment:
+  Mng: to strengthen a pattern
+  Exmp: Income nicely augmented.
+  Knd: verb
+
+disdain:
+  Mng: to look down upon
+  Exmp: I disdain disloyalty.
+  Knd: verb
+  Smlr:
+    - scorn
+    - despise
+    - spurn
+  Opst:
+    - respect
+    - admire
+    - praise
+
+ortho:
+  Mng: straight
+
+orthodox:
+  Mng: of the correct way
+  Exmp: That is a threat to orthodox religion.
+  Knd: noun
+  Prnt: 
+    - ortho
+    - dox
+
+obfuscate:
+  Mng: to confuse
+  Exmp: The words from the politician are obfuscating me.
+  Knd: verb
+
+disingenuous:
+  Mng: not honest
+  Exmp: I call it entertainment and it's disingenuous to claim otherwise.
+  Knd: adj
+  Prnt: 
+    - dis
+    - ingenuous
+
+conjecture:
+  Mng: to guess
+  Exmp: The biography contians the conjectures of the author's early ambition.
+  Knd: noun
+  Smlr:
+    - guess
+    - short
+    - supposition
+    - surmise
+
+pellucid:
+  Mng: clear
+  Exmp: I could see pellucidly
+  Knd: adj
+  Smlr:
+    - lucid
+
+disparate:
+  Mng: different
+  Exmp: We both have disparate views.
+  Knd: adj
+
+explicit:
+  Mng: to make obvious
+  Exmp: Please show your intent explicitly.
+  Knd: adj
+
+scrutinize:
+  Mng: to check thoroughly
+  Exmp: I closely scrutinized her every movement.
+  Knd: verb
+
+synthesize:
+  Mng: to mend different things
+  Exmp: The music is synthesized with computer.
+  Knd: verb
+
+trepidation:
+  Mng: to be afraid of something
+  Exmp: People's trepidation cause them to act unwisely.
+  Knd: noun
+  Smlr:
+    - anxiety
+    - dread
+    - fear
+    - fearfulness
+    - fright
+    - horror
+    - panic
+    - scare
+    - terror
+
+vade:
+  Mng: walk
+
+pervasive:
+  Mng: everywhere
+  Exmp: The influence of classical music is pervasive.
+  Knd: adj
+  Prnt:
+    - per
+    - vad
+
+fastidious:
+  Mng: very picky
+  Exmp: Steve Jobs had a fastidious attention to detail.
+  Knd: adj
+
+ostensible:
+  Mng: skin deep, appearance
+  Exmp: That's an ostensible reason.
+  Knd: adj
+  Smlr:
+    - apparent
+    - plausible
+    - specious
   
+trivial:
+  Mng: Not important
+  Exmp: Those answers are trivial.
+  Knd: adj
+
+idiosyncratic:
+  Mng: very weird
+  Exmp: Those actions were very idiosyncratic.
+  Knd: adj
+
+eclectic:
+  Mng: to have made a compromise
+  Exmp: His eclectic stance on the matter is acceptable for everyone.
+  Knd: adj
+  Smlr:
+    - heterogeneous
+
+laconic:
+  Mng: short and concise
+  Exmp: I made a laconic presentation.
+  Knd: adj
+
+partisan:
+  Mng: supporter of a party
+  Exmp: Partisans in the US are crazy.
+  Knd: noun
+  Prnt:
+    - party
+
+suppress:
+  Mng: to decrease the level of influence
+  Exmp: The government supressed a riot.
+  Knd: verb
