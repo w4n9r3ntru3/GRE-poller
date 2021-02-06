@@ -1,8 +1,5 @@
-module github.com/w4n9r3ntru3/GRE-data
+module github.com/r3ntru3w4n9/GRE-poller
 
 go 1.15
 
-require (
-	github.com/goccy/go-yaml v1.8.3
-	gopkg.in/yaml.v2 v2.2.2
-)
+require gopkg.in/yaml.v2 v2.2.2

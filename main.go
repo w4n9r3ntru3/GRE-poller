@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/w4n9r3ntru3/GRE-data/lib"
+	"github.com/r3ntru3w4n9/GRE-poller/lib"
 	"gopkg.in/yaml.v2"
 )
 
